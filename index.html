@@ -12,15 +12,29 @@
     />
     <title>Document</title>
     <style>
-      @media screen and (min-width: 600px) {
-        .container {
-          width: 100%;
+    
+      @media only screen and (max-width: 599px) {
+         .container {
+          width: 100%;}
+        
+        .image-table {
+          
+          width: 540px;
         }
-      }
-      @media screen and (max-width: 599px) {
-        .recommended-card {
+        .rec-text-table {
+          
+          width: 540px;
+          text-align: center;
+          margin: 0 auto;
           max-width: 100%;
-          width: 508px;
+        }
+        .rec-text-table td {
+          text-align: center;
+        }
+        .card-header {
+         font-size: 24px;
+         font-weight: 700;
+         text-align: center;
         }
       }
     </style>
@@ -42,16 +56,16 @@
           <!-- Start: Email Container -->
           <table
             class="container"
-            width="580px"
+            width="580"
             align="center"
             cellspacing="0"
             cellpadding="0"
             border="0"
             style="
               font-family: 'Robot', Arial, Helvetica, sans-serif;
-
               background-color: #ffffff;
               width: 580px;
+              max-width: 100%;
             "
           >
             <!-- Start: Header Row-->
@@ -64,6 +78,7 @@
                   cellpadding="0"
                   border="0"
                   align="center"
+                  style="""
                 >
                   <!-- Start: FitOn Logo -->
                   <tr>
@@ -84,6 +99,7 @@
                                   width: 200px;
                                   margin: 0 auto;
                                   padding: 1.25rem;
+                                  max-width: 100%;
                                 "
                                 src="https://i.imgur.com/UZCZIPm.png"
                                 title="source: imgur.com"
@@ -141,7 +157,7 @@
             <!-- Start: Hero -->
             <tr>
               <td
-                style="padding: 36px 20px 48px 20px; background-color: #191348"
+                style="padding: 36px 35px 48px 35px; background-color: #191348"
               >
                 <table
                   width="540px"
@@ -260,16 +276,17 @@
             <!-- End: Hero -->
             <!-- Start: Recommended Section -->
             <tr>
-              <td style="padding: 48px 20px" align="center">
+              <td style="padding: 48px 20px" align="center" valign="top">
                 <table
                   class="recommended-card"
-                  width="540px"
+                  width="540"
                   cellspacing="0"
                   cellpadding="0"
                   border="0"
                   align="center"
-                  style="max-width: 100%"
+                  style="max-width: 100%;"
                 >
+                  <!-- Start: Recommended Header -->
                   <tr>
                     <td align="center">
                       <h2 style="margin: 0; display: block">
@@ -277,16 +294,22 @@
                       </h2>
                     </td>
                   </tr>
+                  <!-- End: Recommended Header -->
+                  <!-- Start: Slim Down -->
                   <tr>
-                    <td align="center" style="padding: 40px 0 0">
+                    <td
+                      align="center"
+                      valign="middle"
+                      style="padding: 40px 0 0"
+                    >
                       <table
-                        class="recommended-card-img"
+                        class="image-table"
                         width="150"
                         cellspacing="0"
                         cellpadding="0"
                         border="0"
                         align="left"
-                        style="float: left; width: 150px; display: table"
+                        "
                       >
                         <tr>
                           <td align="center" valgin="middle">
@@ -295,7 +318,7 @@
                               style="
                                 width: 150px;
                                 margin: 0 auto;
-                                position: relative;
+
                                 display: block;
                               "
                               src="https://i.imgur.com/DRtUm3z.png"
@@ -305,18 +328,18 @@
                         </tr>
                       </table>
                       <table
-                        class="recommended-card-text"
+                        class="rec-text-table"
                         width="360"
                         cellspacing="0"
                         cellpadding="0"
                         border="0"
                         align="right"
-                        style="float: right; width: 360px"
+                        style=""
                       >
                         <tr>
-                          <td>
-                            <h3>Slim Down</h3>
-                            <p>
+                          <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                            <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">Slim Down</h3>
+                            <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; margin-block-end: 20px;">
                               Slim down with this beginner 6 week program
                               designed to help you melt fat, build muscle, and
                               lose weight.
@@ -326,6 +349,279 @@
                       </table>
                     </td>
                   </tr>
+                  <!-- End: Slim Down -->
+                  <!-- Start: Muscle Maker -->
+                  <tr>
+                     <td
+                       align="center"
+                       valign="middle"
+                       style="padding: 40px 0 0"
+                     >
+                       <table
+                         class="image-table"
+                         width="150"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         "
+                       >
+                         <tr>
+                           <td align="center" valgin="middle">
+                             <img
+                               class="recommended-img"
+                               style="
+                                 width: 150px;
+                                 margin: 0 auto;
+                                 display: block;
+                               "
+                                src="https://i.imgur.com/kkgdTv0.png" 
+                               
+                             />
+                           </td>
+                         </tr>
+                       </table>
+                       <table
+                         class="rec-text-table"
+                         width="360"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="left"
+                         style=""
+                       >
+                         <tr>
+                           <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                             <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">Muscle Maker</h3>
+                             <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; ">
+                              Are you ready to feel your strongest? This 12-week total strength program will help you build muscle like never before and feel stronger than ever.
+                             </p>
+                           </td>
+                         </tr>
+                       </table>
+                     </td>
+                   </tr>
+                   <!-- End: Muscle Maker  -->
+
+                   <!-- Start: 20 Minute Fix -->
+                   <tr>
+                     <td
+                       align="center"
+                       valign="middle"
+                       style="padding: 40px 0 0"
+                     >
+                       <table
+                         class="image-table"
+                         width="150"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="left"
+                         "
+                       >
+                         <tr>
+                           <td align="center" valgin="middle">
+                             <img
+                               class="recommended-img"
+                               style="
+                                 width: 150px;
+                                 margin: 0 auto;
+ 
+                                 display: block;
+                               "
+                               src="https://i.imgur.com/JthUnJB.png"
+                               title="source: imgur.com"
+                             />
+                           </td>
+                         </tr>
+                       </table>
+                       <table
+                         class="rec-text-table"
+                         width="360"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         style=""
+                       >
+                         <tr>
+                           <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                             <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">20 Minute Fix</h3>
+                             <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; margin-block-end: 20px;">
+                              Ready to get moving? Give this 20-minute program a go that will help you burn calories, get results, and transform your body when you are short on time.
+                             </p>
+                           </td>
+                         </tr>
+                       </table>
+                     </td>
+                   </tr>
+                   <!-- End: 20 Minute Fix -->
+
+                  <!-- Start: Total Tone -->
+                   <tr>
+                     <td
+                       align="center"
+                       valign="middle"
+                       style="padding: 40px 0 0"
+                     >
+                       <table
+                         class="image-table"
+                         width="150"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         "
+                       >
+                         <tr>
+                           <td align="center" valgin="middle">
+                             <img
+                               class="recommended-img"
+                               style="
+                                 width: 150px;
+                                 margin: 0 auto;
+                                 display: block;
+                               "
+                               src="https://imgur.com/T1gLw9F.png"
+                               title="source: imgur.com"
+                             />
+                           </td>
+                         </tr>
+                       </table>
+                       <table
+                         class="rec-text-table"
+                         width="360"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         style=""
+                       >
+                         <tr>
+                           <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                             <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">Total Tone</h3>
+                             <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; margin-block-end: 20px;">
+                              Tone and define your entire body during this 6 week program. Build and sculpt long, lean muscles in a low impact way that still delivers big results.
+                             </p>
+                           </td>
+                         </tr>
+                       </table>
+                     </td>
+                   </tr>
+                   <!-- End: Total Tone -->
+
+                   <!-- Start: Crush It -->
+                   <tr>
+                     <td
+                       align="center"
+                       valign="middle"
+                       style="padding: 40px 0 0"
+                     >
+                       <table
+                         class="image-table"
+                         width="150"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="left"
+                         "
+                       >
+                         <tr>
+                           <td align="center" valgin="middle">
+                             <img
+                               class="recommended-img"
+                               style="
+                                 width: 150px;
+                                 margin: 0 auto;
+ 
+                                 display: block;
+                               "
+                               src="https://imgur.com/MpoGMWY.png"
+                               title="source: imgur.com"
+                             />
+                           </td>
+                         </tr>
+                       </table>
+                       <table
+                         class="rec-text-table"
+                         width="360"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         style=""
+                       >
+                         <tr>
+                           <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                             <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">Crush It: Cardio & HIIT</h3>
+                             <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; margin-block-end: 20px;">
+                              Get your heart rate up with this Cardio and HIIT program. This program will have you dripping with sweat, burning calories, and feeling ready to crush it.
+                             </p>
+                           </td>
+                         </tr>
+                       </table>
+                     </td>
+                   </tr>
+                   <!-- End: Crush It -->
+
+                   <!-- Start: Stretch -->
+                   <tr>
+                     <td
+                       align="center"
+                       valign="middle"
+                       style="padding: 40px 0 0"
+                     >
+                       <table
+                         class="image-table"
+                         width="150"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="right"
+                         "
+                       >
+                         <tr>
+                           <td align="center" valgin="middle">
+                             <img
+                               class="recommended-img"
+                               style="
+                                 width: 150px;
+                                 margin: 0 auto;
+ 
+                                 display: block;
+                               "
+                               src="https://imgur.com/0dBc5gx.png"
+                               title="source: imgur.com"
+                             />
+                           </td>
+                         </tr>
+                       </table>
+                       <table
+                         class="rec-text-table"
+                         width="360"
+                         cellspacing="0"
+                         cellpadding="0"
+                         border="0"
+                         align="Left"
+                         style=""
+                       >
+                         <tr>
+                           <td style="margin: 0; font-size: 18px; font-style: normal; font-weight: 400; line-height: 26px;">
+                             <h3 class="card-header" style="display: block; margin: 20px 0px 5px 0px; line-height: 1; font-weight: bold; color: #191348;">Stretch It Out</h3>
+                             <p style="display: block; margin: 0 0 20px 0; font-size: 16px; font-weight: 400; line-height: 24px; text-indent: 0; margin-block-end: 20px;">
+                              Give your body the love it deserves with this stretching program that will help you increase flexibility and move better.
+                             </p>
+                           </td>
+                         </tr>
+                       </table>
+                     </td>
+                   </tr>
+                   <!-- End: Stretch -->
+               
+                  
+
+
+
                 </table>
               </td>
             </tr>
